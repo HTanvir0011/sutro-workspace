@@ -34,3 +34,6 @@ __pycache__/
 # Generated archives and dataset samples remain local.
 /artifacts/
 /data/samples/
+
+# Local Vercel project metadata and credentials.
+/.vercel/
