@@ -1,5 +1,7 @@
 # Sutro (সূত্র) — pre-purchase evidence check for a single plot
 
+**Live website: [sutro-workspace.vercel.app](https://sutro-workspace.vercel.app)**
+
 Public source snapshot: [HTanvir0011/sutro-workspace](https://github.com/HTanvir0011/sutro-workspace). See [delivery scope and setup](docs/implementation/PUBLICATION.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Dataset folders and generated training histories are kept local; reviewed runtime model copies are included under `assets/models/`.
 
 **LandTech 2026 · Track: Digital Land Records, Verification & Digitization**

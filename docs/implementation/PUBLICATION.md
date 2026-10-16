@@ -25,8 +25,12 @@ The static examples and manual case flow do not require private datasets. Full-d
 
 ## Vercel hosting
 
+Live site: [https://sutro-workspace.vercel.app](https://sutro-workspace.vercel.app). Vercel project: `tanvir-790c/sutro-workspace`.
+
 The root `vercel.json` selects the static framework preset, runs `npm ci --ignore-scripts --omit=optional` followed by `npm run build`, and publishes only `dist/`. Existing `.html` links stay intact. Response headers match the local public server, including the OCR worker's WebAssembly policy.
 
 `.vercelignore` excludes datasets, private/runtime folders, tests, documentation, training sources and generated files from CLI uploads. The build still enforces `config/public-files.json` and verifies reviewed large assets. Vercel project metadata remains local in the ignored `.vercel/` directory.
 
 For a new project, import `HTanvir0011/sutro-workspace` into Vercel or sign in with `npx vercel login`, link this checkout to the intended project, and run `npx vercel --prod`. The static site supports the examples and browser-local case workflow; the loopback-only private research catalog is a separate local service.
+
+The first production release was deployed through the authenticated Vercel CLI. Redeploy this linked checkout with `npx vercel --prod --scope tanvir-790c`. Automatic deployments on GitHub pushes require connecting the GitHub account in Vercel; that connection was not available at publication time.
