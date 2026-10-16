@@ -1,0 +1,36 @@
+node_modules/
+/dist/
+/test-results/
+/playwright-report/
+/config/sources.local.json
+/training/runs/
+/.venv/
+kaggle.json
+.kaggle/
+*.log
+.DS_Store
+model/*.keras
+model/*.h5
+artifacts/incoming/
+*.pt
+*.keras
+*.h5
+
+# Local datasets and delivery workspace; dataset files are not published.
+/docs/dataset_1_land_ocr/
+/docs/dataset_2_numta_digits/
+/docs/datasets/full/
+/docs/.runtime/
+/storage/private/
+/.delivery/
+/docs/dataset_archives/*.zip
+/docs/dataset_archives/*.zip.part-*
+/docs/dataset_archives/manifest.json
+/docs/dataset_archives/SHA256SUMS.txt
+/.venv-training/
+__pycache__/
+*.pyc
+
+# Generated archives and dataset samples remain local.
+/artifacts/
+/data/samples/

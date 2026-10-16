@@ -1,0 +1,42 @@
+{
+  "scope": "Python ONNX CPU vs Chrome worker WASM parity, not task accuracy",
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "kind": "digit",
+      "width": 32,
+      "maxAbsDiff": 5.960464477539062e-7,
+      "pythonOutputs": 10,
+      "browserOutputs": 10,
+      "modelHash": "ca3bc017f0ebca3161d9c027ad8efa24d70eeea76399a59796c1f0cc8c8f00d5",
+      "ms": 314.5
+    },
+    {
+      "kind": "line",
+      "width": 64,
+      "maxAbsDiff": 0.00000762939453125,
+      "pythonOutputs": 1040,
+      "browserOutputs": 1040,
+      "modelHash": "cbf3bd83c5da6ff8fa4fed5c05a48d0809b964d28b4a46fb6bf1556836c0fcaa",
+      "ms": 179.80000001192093
+    },
+    {
+      "kind": "line",
+      "width": 128,
+      "maxAbsDiff": 0.0000057220458984375,
+      "pythonOutputs": 2080,
+      "browserOutputs": 2080,
+      "modelHash": "cbf3bd83c5da6ff8fa4fed5c05a48d0809b964d28b4a46fb6bf1556836c0fcaa",
+      "ms": 55
+    },
+    {
+      "kind": "line",
+      "width": 320,
+      "maxAbsDiff": 0.0000095367431640625,
+      "pythonOutputs": 5200,
+      "browserOutputs": 5200,
+      "modelHash": "cbf3bd83c5da6ff8fa4fed5c05a48d0809b964d28b4a46fb6bf1556836c0fcaa",
+      "ms": 129.69999998807907
+    }
+  ]
+}

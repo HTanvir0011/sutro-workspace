@@ -1,0 +1,20 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path'),http=require('node:http');
+const {createServer}=require('../scripts/serve'),{safePath}=require('../server/http');
+test('private and Windows escape paths, unsafe methods, host/origin/session and malformed encoding fail closed',async t=>{
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),'sutro-public-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+  fs.writeFileSync(path.join(root,'build-manifest.json'),'{}');fs.writeFileSync(path.join(root,'index.html'),'<h1>safe shell</h1>');fs.writeFileSync(path.join(root,'safe.js'),'true;');
+  const port=18647,server=createServer({port,root});await new Promise(resolve=>server.listen(port,'127.0.0.1',resolve));t.after(()=>new Promise(resolve=>server.close(resolve)));
+  const request=(url,headers={},method='GET')=>new Promise((resolve,reject)=>{const r=http.request({host:'127.0.0.1',port,path:url,headers,method},res=>{let text='';res.on('data',d=>text+=d);res.on('end',()=>resolve({status:res.statusCode,headers:res.headers,text}));});r.on('error',reject);r.end();});
+  assert.equal((await request('/')).status,200);
+  for(const p of ['/docs/datasets/full/x','/server/http.js','/config/sources.local.json','/../package.json','/%2e%2e/package.json','/..%5cpackage.json','/C:%5cWindows/win.ini','//localhost/x','/safe.js:secret'])assert.equal((await request(p)).status,404,p);
+  assert.equal((await request('/%XX')).status,400);assert.equal((await request('/',{},'POST')).status,405);
+  assert.equal((await request('/',{Host:'attacker.example'})).status,403);
+  assert.equal((await request('/',{Origin:'https://attacker.example'})).status,403);
+  assert.equal((await request('/api/v1/records')).status,401);
+  const launch=await request('/',{'Sec-Fetch-Mode':'navigate','Sec-Fetch-Site':'none'});assert.match(launch.headers['set-cookie'][0],/HttpOnly; SameSite=Strict/);
+  assert.equal((await request('/api/v1/records',{Cookie:launch.headers['set-cookie'][0].split(';')[0]})).status,503);
+  assert.match(launch.headers['content-security-policy'],/default-src 'none'/);assert.doesNotMatch(launch.headers['content-security-policy'],/unsafe-inline|unsafe-eval/);
+  const head=await request('/safe.js',{},'HEAD');assert.equal(head.text,'');assert.equal(head.headers['content-length'],'5');
+  const other=fs.mkdtempSync(path.join(os.tmpdir(),'sutro-private-'));t.after(()=>fs.rmSync(other,{recursive:true,force:true}));fs.writeFileSync(path.join(other,'hidden.txt'),'private');fs.symlinkSync(other,path.join(root,'junction'),'junction');assert.equal(safePath(root,'junction/hidden.txt'),null);
+});

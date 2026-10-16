@@ -1,0 +1,131 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "page": "index",
+      "width": 1280,
+      "errors": [],
+      "title": "Sutro · Plot Evidence Check",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "cases",
+      "width": 1280,
+      "errors": [],
+      "title": "Sutro · Case Workspace",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "intake",
+      "width": 1280,
+      "errors": [],
+      "title": "Sutro · Document Intake",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "timeline",
+      "width": 1280,
+      "errors": [],
+      "title": "Sutro · Ownership Timeline",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "audit",
+      "width": 1280,
+      "errors": [],
+      "title": "Sutro · Share Audit",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "report",
+      "width": 1280,
+      "errors": [],
+      "title": "Sutro · Verification Report",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "about",
+      "width": 1280,
+      "errors": [],
+      "title": "Sutro · About",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "models",
+      "width": 1280,
+      "errors": [],
+      "title": "Sutro · Model Results",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "ocr",
+      "width": 1280,
+      "errors": [],
+      "title": "Sutro · Digit Reader",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "index",
+      "width": 390,
+      "errors": [],
+      "title": "Sutro · Plot Evidence Check",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "cases",
+      "width": 390,
+      "errors": [],
+      "title": "Sutro · Case Workspace",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "intake",
+      "width": 390,
+      "errors": [],
+      "title": "Sutro · Document Intake",
+      "horizontalOverflow": true
+    },
+    {
+      "page": "timeline",
+      "width": 390,
+      "errors": [],
+      "title": "Sutro · Ownership Timeline",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "audit",
+      "width": 390,
+      "errors": [],
+      "title": "Sutro · Share Audit",
+      "horizontalOverflow": true
+    },
+    {
+      "page": "report",
+      "width": 390,
+      "errors": [],
+      "title": "Sutro · Verification Report",
+      "horizontalOverflow": true
+    },
+    {
+      "page": "about",
+      "width": 390,
+      "errors": [],
+      "title": "Sutro · About",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "models",
+      "width": 390,
+      "errors": [],
+      "title": "Sutro · Model Results",
+      "horizontalOverflow": false
+    },
+    {
+      "page": "ocr",
+      "width": 390,
+      "errors": [],
+      "title": "Sutro · Digit Reader",
+      "horizontalOverflow": false
+    }
+  ]
+}

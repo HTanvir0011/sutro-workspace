@@ -1,0 +1,2 @@
+6278143dc86a2b91027973c65ad03f510081807726cea6f2778e55b518df2bff  dataset_1_land_ocr.zip
+bcc622aa2531c3d03cbb37a5c8961c5bc058e87da28efb7f7e05dd7b2b322526  dataset_2_numta_digits.zip

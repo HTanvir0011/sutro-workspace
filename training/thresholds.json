@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "recordedBeforeNewHeldoutEvaluation": "2026-10-16",
+  "scope": "New local runs only. Legacy test metrics were already visible; they cannot be used as prospective promotion evidence.",
+  "seed": 20261016,
+  "digit": {"accuracyMin":0.98,"macroF1Min":0.98,"browserWarmLatencyMsMax":1000,"scope":"isolated Numta digits, grouped image split; writer independence unknown"},
+  "line": {"cerMax":0.02,"exactMin":0.95,"criticalNumericExactMin":0.99,"browserWarmLatencyMsMax":1000,"scope":"synthetic printed Form-5462 lines only"},
+  "browserWorkerMemoryMiBMax": 512,
+  "realFormsAccepted": false,
+  "layoutDetectorAccepted": false
+}

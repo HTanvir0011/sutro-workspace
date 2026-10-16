@@ -1,0 +1,1 @@
+{"id": "tanvirhossin24231e14/sutro-khatian-ocr-crnn", "title": "Sutro Khatian OCR CRNN", "code_file": "01_khatian_cell_ocr_crnn.ipynb", "language": "python", "kernel_type": "notebook", "is_private": "true", "enable_gpu": "true", "enable_internet": "true", "dataset_sources": ["tanvirhossin24231e14/sutro-training-data"], "competition_sources": [], "kernel_sources": []}

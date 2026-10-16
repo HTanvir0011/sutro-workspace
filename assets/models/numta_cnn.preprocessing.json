@@ -1,0 +1,17 @@
+{
+ "input": "image float32 [B,1,32,32], values 0..1, ink bright (255-gray)/255",
+ "output": "logits [B,10] (apply softmax yourself; NOT calibrated confidence)",
+ "classes": [
+  "০",
+  "১",
+  "২",
+  "৩",
+  "৪",
+  "৫",
+  "৬",
+  "৭",
+  "৮",
+  "৯"
+ ],
+ "onnx_parity_max_abs_diff": 1.430511474609375e-06
+}

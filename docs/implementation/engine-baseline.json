@@ -1,0 +1,1153 @@
+[
+  {
+    "id": "demo-a",
+    "result": {
+      "engineVersion": "0.3.0",
+      "revision": 0,
+      "asOfYear": 2026,
+      "synthetic": true,
+      "findings": [
+        {
+          "kind": "missing",
+          "code": "M_UNEXPLAINED",
+          "params": {
+            "ref": "BS-512",
+            "year": 1998,
+            "diffs": [
+              {
+                "name": "Rahim",
+                "chain": "35",
+                "recorded": "50"
+              },
+              {
+                "name": "Salim",
+                "chain": "35",
+                "recorded": "50"
+              },
+              {
+                "name": "Rokeya",
+                "chain": "35/2",
+                "recorded": "0"
+              },
+              {
+                "name": "Amena",
+                "chain": "25/2",
+                "recorded": "0"
+              }
+            ],
+            "uncomparable": []
+          },
+          "docs": [
+            "k-bs512"
+          ]
+        },
+        {
+          "kind": "missing",
+          "code": "M_COVERAGE_GAP",
+          "params": {
+            "gaps": [
+              [
+                1962,
+                2026
+              ]
+            ]
+          },
+          "docs": []
+        },
+        {
+          "kind": "missing",
+          "code": "M_UNCERTIFIED",
+          "params": {
+            "count": 1
+          },
+          "docs": [
+            "k-bs512"
+          ]
+        }
+      ],
+      "inputErrors": [],
+      "timeline": [
+        {
+          "year": 1962,
+          "type": "root",
+          "docId": "k-sa87",
+          "notes": [],
+          "area": "100",
+          "chain": [
+            {
+              "name": "Karim",
+              "share": "1",
+              "pending": []
+            }
+          ],
+          "record": [
+            {
+              "name": "Karim",
+              "share": "1",
+              "pending": []
+            }
+          ]
+        },
+        {
+          "year": 1985,
+          "type": "death",
+          "docId": "h-karim",
+          "notes": [],
+          "area": "100",
+          "chain": [
+            {
+              "name": "Rahim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Salim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Rokeya",
+              "share": "7/40",
+              "pending": []
+            },
+            {
+              "name": "Amena",
+              "share": "1/8",
+              "pending": []
+            }
+          ],
+          "record": [
+            {
+              "name": "Rahim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Salim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Rokeya",
+              "share": "7/40",
+              "pending": []
+            },
+            {
+              "name": "Amena",
+              "share": "1/8",
+              "pending": []
+            }
+          ]
+        },
+        {
+          "year": 1998,
+          "type": "khatian",
+          "docId": "k-bs512",
+          "notes": [],
+          "area": "100",
+          "chain": [
+            {
+              "name": "Rahim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Salim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Rokeya",
+              "share": "7/40",
+              "pending": []
+            },
+            {
+              "name": "Amena",
+              "share": "1/8",
+              "pending": []
+            }
+          ],
+          "record": [
+            {
+              "name": "Rahim",
+              "share": "1/2",
+              "pending": []
+            },
+            {
+              "name": "Salim",
+              "share": "1/2",
+              "pending": []
+            }
+          ]
+        }
+      ],
+      "estates": [
+        {
+          "docId": "h-karim",
+          "decedent": "Karim",
+          "year": 1985,
+          "result": {
+            "status": "computed",
+            "reasons": [],
+            "assumptions": [
+              "no_bequest_assumed"
+            ],
+            "shares": [
+              {
+                "name": "Amena",
+                "relation": "wife",
+                "share": "1/8",
+                "basis": "Q4:12"
+              },
+              {
+                "name": "Rahim",
+                "relation": "son",
+                "share": "7/20",
+                "basis": "Q4:11"
+              },
+              {
+                "name": "Salim",
+                "relation": "son",
+                "share": "7/20",
+                "basis": "Q4:11"
+              },
+              {
+                "name": "Rokeya",
+                "relation": "daughter",
+                "share": "7/40",
+                "basis": "Q4:11"
+              }
+            ],
+            "excluded": []
+          },
+          "used": "computed",
+          "stated": null,
+          "distribution": [
+            {
+              "name": "Amena",
+              "share": "1/8"
+            },
+            {
+              "name": "Rahim",
+              "share": "7/20"
+            },
+            {
+              "name": "Salim",
+              "share": "7/20"
+            },
+            {
+              "name": "Rokeya",
+              "share": "7/40"
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "from": 1962,
+        "to": 2026,
+        "covered": [],
+        "gaps": [
+          [
+            1962,
+            2026
+          ]
+        ]
+      },
+      "offer": {
+        "seller": "Rahim",
+        "area": "50",
+        "basis": "BS-512",
+        "plotArea": "100",
+        "chain": {
+          "held": "35",
+          "pending": [],
+          "status": "exceeds"
+        },
+        "record": {
+          "held": "50",
+          "pending": [],
+          "status": "within"
+        }
+      },
+      "assumptions": [
+        {
+          "code": "A_GENUINE"
+        },
+        {
+          "code": "A_NAMES"
+        },
+        {
+          "code": "A_SAME_PLOT"
+        },
+        {
+          "code": "A_HEIRS_COMPLETE",
+          "params": {
+            "names": "Karim"
+          }
+        },
+        {
+          "code": "A_RULES_PENDING"
+        },
+        {
+          "code": "A_NO_BEQUEST"
+        },
+        {
+          "code": "A_NO_HIDDEN_TRANSFERS",
+          "params": {
+            "gaps": [
+              [
+                1962,
+                2026
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        {
+          "item": "transfer_records",
+          "findingIdx": [
+            0
+          ],
+          "params": [
+            {
+              "ref": "BS-512",
+              "year": 1998,
+              "diffs": [
+                {
+                  "name": "Rahim",
+                  "chain": "35",
+                  "recorded": "50"
+                },
+                {
+                  "name": "Salim",
+                  "chain": "35",
+                  "recorded": "50"
+                },
+                {
+                  "name": "Rokeya",
+                  "chain": "35/2",
+                  "recorded": "0"
+                },
+                {
+                  "name": "Amena",
+                  "chain": "25/2",
+                  "recorded": "0"
+                }
+              ],
+              "uncomparable": []
+            }
+          ]
+        },
+        {
+          "item": "registry_search",
+          "findingIdx": [
+            1
+          ],
+          "params": [
+            {
+              "gaps": [
+                [
+                  1962,
+                  2026
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "item": "certified_copies",
+          "findingIdx": [
+            2
+          ],
+          "params": [
+            {
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "contradictions": 0,
+        "missing": 3,
+        "review": 0,
+        "inputErrors": 0
+      },
+      "rootDocId": "k-sa87"
+    }
+  },
+  {
+    "id": "demo-b",
+    "result": {
+      "engineVersion": "0.3.0",
+      "revision": 0,
+      "asOfYear": 2026,
+      "synthetic": true,
+      "findings": [
+        {
+          "kind": "missing",
+          "code": "M_UNEXPLAINED",
+          "params": {
+            "ref": "BS-512",
+            "year": 1998,
+            "diffs": [
+              {
+                "name": "Rahim",
+                "chain": "35",
+                "recorded": "50"
+              },
+              {
+                "name": "Salim",
+                "chain": "35",
+                "recorded": "50"
+              },
+              {
+                "name": "Rokeya",
+                "chain": "35/2",
+                "recorded": "0"
+              },
+              {
+                "name": "Amena",
+                "chain": "25/2",
+                "recorded": "0"
+              }
+            ],
+            "uncomparable": []
+          },
+          "docs": [
+            "k-bs512"
+          ]
+        },
+        {
+          "kind": "missing",
+          "code": "M_DEED_NO_MUTATION",
+          "params": {
+            "deedNo": "4417/2011",
+            "year": 2011
+          },
+          "docs": [
+            "d-4417"
+          ]
+        },
+        {
+          "kind": "missing",
+          "code": "M_COVERAGE_GAP",
+          "params": {
+            "gaps": [
+              [
+                1962,
+                2004
+              ],
+              [
+                2016,
+                2026
+              ]
+            ]
+          },
+          "docs": []
+        },
+        {
+          "kind": "contradiction",
+          "code": "C_BASIS_OVERCOMMIT",
+          "params": {
+            "seller": "Rahim",
+            "ref": "BS-512",
+            "recorded": "50",
+            "total": "70",
+            "items": [
+              {
+                "docId": "d-4417",
+                "area": "20",
+                "kind": "deed"
+              },
+              {
+                "docId": null,
+                "area": "50",
+                "kind": "offer"
+              }
+            ]
+          },
+          "docs": [
+            "k-bs512",
+            "d-4417"
+          ]
+        },
+        {
+          "kind": "missing",
+          "code": "M_UNCERTIFIED",
+          "params": {
+            "count": 1
+          },
+          "docs": [
+            "k-bs512"
+          ]
+        }
+      ],
+      "inputErrors": [],
+      "timeline": [
+        {
+          "year": 1962,
+          "type": "root",
+          "docId": "k-sa87",
+          "notes": [],
+          "area": "100",
+          "chain": [
+            {
+              "name": "Karim",
+              "share": "1",
+              "pending": []
+            }
+          ],
+          "record": [
+            {
+              "name": "Karim",
+              "share": "1",
+              "pending": []
+            }
+          ]
+        },
+        {
+          "year": 1985,
+          "type": "death",
+          "docId": "h-karim",
+          "notes": [],
+          "area": "100",
+          "chain": [
+            {
+              "name": "Rahim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Salim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Rokeya",
+              "share": "7/40",
+              "pending": []
+            },
+            {
+              "name": "Amena",
+              "share": "1/8",
+              "pending": []
+            }
+          ],
+          "record": [
+            {
+              "name": "Rahim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Salim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Rokeya",
+              "share": "7/40",
+              "pending": []
+            },
+            {
+              "name": "Amena",
+              "share": "1/8",
+              "pending": []
+            }
+          ]
+        },
+        {
+          "year": 1998,
+          "type": "khatian",
+          "docId": "k-bs512",
+          "notes": [],
+          "area": "100",
+          "chain": [
+            {
+              "name": "Rahim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Salim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Rokeya",
+              "share": "7/40",
+              "pending": []
+            },
+            {
+              "name": "Amena",
+              "share": "1/8",
+              "pending": []
+            }
+          ],
+          "record": [
+            {
+              "name": "Rahim",
+              "share": "1/2",
+              "pending": []
+            },
+            {
+              "name": "Salim",
+              "share": "1/2",
+              "pending": []
+            }
+          ]
+        },
+        {
+          "year": 2011,
+          "type": "deed",
+          "docId": "d-4417",
+          "notes": [],
+          "area": "100",
+          "chain": [
+            {
+              "name": "Salim",
+              "share": "7/20",
+              "pending": []
+            },
+            {
+              "name": "Farid",
+              "share": "1/5",
+              "pending": []
+            },
+            {
+              "name": "Rokeya",
+              "share": "7/40",
+              "pending": []
+            },
+            {
+              "name": "Rahim",
+              "share": "3/20",
+              "pending": []
+            },
+            {
+              "name": "Amena",
+              "share": "1/8",
+              "pending": []
+            }
+          ],
+          "record": [
+            {
+              "name": "Salim",
+              "share": "1/2",
+              "pending": []
+            },
+            {
+              "name": "Rahim",
+              "share": "3/10",
+              "pending": []
+            },
+            {
+              "name": "Farid",
+              "share": "1/5",
+              "pending": []
+            }
+          ]
+        }
+      ],
+      "estates": [
+        {
+          "docId": "h-karim",
+          "decedent": "Karim",
+          "year": 1985,
+          "result": {
+            "status": "computed",
+            "reasons": [],
+            "assumptions": [
+              "no_bequest_assumed"
+            ],
+            "shares": [
+              {
+                "name": "Amena",
+                "relation": "wife",
+                "share": "1/8",
+                "basis": "Q4:12"
+              },
+              {
+                "name": "Rahim",
+                "relation": "son",
+                "share": "7/20",
+                "basis": "Q4:11"
+              },
+              {
+                "name": "Salim",
+                "relation": "son",
+                "share": "7/20",
+                "basis": "Q4:11"
+              },
+              {
+                "name": "Rokeya",
+                "relation": "daughter",
+                "share": "7/40",
+                "basis": "Q4:11"
+              }
+            ],
+            "excluded": []
+          },
+          "used": "computed",
+          "stated": null,
+          "distribution": [
+            {
+              "name": "Amena",
+              "share": "1/8"
+            },
+            {
+              "name": "Rahim",
+              "share": "7/20"
+            },
+            {
+              "name": "Salim",
+              "share": "7/20"
+            },
+            {
+              "name": "Rokeya",
+              "share": "7/40"
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "from": 1962,
+        "to": 2026,
+        "covered": [
+          [
+            2005,
+            2015,
+            "s-2005"
+          ]
+        ],
+        "gaps": [
+          [
+            1962,
+            2004
+          ],
+          [
+            2016,
+            2026
+          ]
+        ]
+      },
+      "offer": {
+        "seller": "Rahim",
+        "area": "50",
+        "basis": "BS-512",
+        "plotArea": "100",
+        "chain": {
+          "held": "15",
+          "pending": [],
+          "status": "exceeds"
+        },
+        "record": {
+          "held": "30",
+          "pending": [],
+          "status": "exceeds"
+        }
+      },
+      "assumptions": [
+        {
+          "code": "A_GENUINE"
+        },
+        {
+          "code": "A_NAMES"
+        },
+        {
+          "code": "A_SAME_PLOT"
+        },
+        {
+          "code": "A_HEIRS_COMPLETE",
+          "params": {
+            "names": "Karim"
+          }
+        },
+        {
+          "code": "A_RULES_PENDING"
+        },
+        {
+          "code": "A_NO_BEQUEST"
+        },
+        {
+          "code": "A_NO_HIDDEN_TRANSFERS",
+          "params": {
+            "gaps": [
+              [
+                1962,
+                2004
+              ],
+              [
+                2016,
+                2026
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        {
+          "item": "transfer_records",
+          "findingIdx": [
+            0
+          ],
+          "params": [
+            {
+              "ref": "BS-512",
+              "year": 1998,
+              "diffs": [
+                {
+                  "name": "Rahim",
+                  "chain": "35",
+                  "recorded": "50"
+                },
+                {
+                  "name": "Salim",
+                  "chain": "35",
+                  "recorded": "50"
+                },
+                {
+                  "name": "Rokeya",
+                  "chain": "35/2",
+                  "recorded": "0"
+                },
+                {
+                  "name": "Amena",
+                  "chain": "25/2",
+                  "recorded": "0"
+                }
+              ],
+              "uncomparable": []
+            }
+          ]
+        },
+        {
+          "item": "mutation_record",
+          "findingIdx": [
+            1
+          ],
+          "params": [
+            {
+              "deedNo": "4417/2011",
+              "year": 2011
+            }
+          ]
+        },
+        {
+          "item": "registry_search",
+          "findingIdx": [
+            2
+          ],
+          "params": [
+            {
+              "gaps": [
+                [
+                  1962,
+                  2004
+                ],
+                [
+                  2016,
+                  2026
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "item": "resolve_conflict",
+          "findingIdx": [
+            3
+          ],
+          "params": [
+            {
+              "seller": "Rahim",
+              "ref": "BS-512",
+              "recorded": "50",
+              "total": "70",
+              "items": [
+                {
+                  "docId": "d-4417",
+                  "area": "20",
+                  "kind": "deed"
+                },
+                {
+                  "docId": null,
+                  "area": "50",
+                  "kind": "offer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "item": "certified_copies",
+          "findingIdx": [
+            4
+          ],
+          "params": [
+            {
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "contradictions": 1,
+        "missing": 4,
+        "review": 0,
+        "inputErrors": 0
+      },
+      "rootDocId": "k-sa87"
+    }
+  },
+  {
+    "id": "demo-c",
+    "result": {
+      "engineVersion": "0.3.0",
+      "revision": 0,
+      "asOfYear": 2026,
+      "synthetic": true,
+      "findings": [
+        {
+          "kind": "missing",
+          "code": "M_ESTATE_INFO",
+          "params": {
+            "decedent": "Hasan",
+            "reason": "predeceased_child_issue_unknown",
+            "name": "Kamal"
+          },
+          "docs": [
+            "h-hasan"
+          ]
+        }
+      ],
+      "inputErrors": [],
+      "timeline": [
+        {
+          "year": 1980,
+          "type": "root",
+          "docId": "k-rs33",
+          "notes": [],
+          "area": "60",
+          "chain": [
+            {
+              "name": "Hasan",
+              "share": "1",
+              "pending": []
+            }
+          ],
+          "record": [
+            {
+              "name": "Hasan",
+              "share": "1",
+              "pending": []
+            }
+          ]
+        },
+        {
+          "year": 2001,
+          "type": "death",
+          "docId": "h-hasan",
+          "notes": [
+            {
+              "code": "estate_unresolved",
+              "params": {
+                "decedent": "Hasan"
+              }
+            }
+          ],
+          "area": "60",
+          "chain": [
+            {
+              "name": "Jamal",
+              "share": "0",
+              "pending": [
+                "Hasan"
+              ]
+            },
+            {
+              "name": "Laila",
+              "share": "0",
+              "pending": [
+                "Hasan"
+              ]
+            },
+            {
+              "name": "Nasrin",
+              "share": "0",
+              "pending": [
+                "Hasan"
+              ]
+            }
+          ],
+          "record": [
+            {
+              "name": "Jamal",
+              "share": "0",
+              "pending": [
+                "Hasan"
+              ]
+            },
+            {
+              "name": "Laila",
+              "share": "0",
+              "pending": [
+                "Hasan"
+              ]
+            },
+            {
+              "name": "Nasrin",
+              "share": "0",
+              "pending": [
+                "Hasan"
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2008,
+          "type": "khatian",
+          "docId": "k-bs641",
+          "notes": [
+            {
+              "code": "uncomparable",
+              "params": {
+                "names": "Jamal, Laila, Nasrin"
+              }
+            }
+          ],
+          "area": "60",
+          "chain": [
+            {
+              "name": "Jamal",
+              "share": "0",
+              "pending": [
+                "Hasan"
+              ]
+            },
+            {
+              "name": "Laila",
+              "share": "0",
+              "pending": [
+                "Hasan"
+              ]
+            },
+            {
+              "name": "Nasrin",
+              "share": "0",
+              "pending": [
+                "Hasan"
+              ]
+            }
+          ],
+          "record": [
+            {
+              "name": "Jamal",
+              "share": "7/12",
+              "pending": []
+            },
+            {
+              "name": "Nasrin",
+              "share": "7/24",
+              "pending": []
+            },
+            {
+              "name": "Laila",
+              "share": "1/8",
+              "pending": []
+            }
+          ]
+        }
+      ],
+      "estates": [
+        {
+          "docId": "h-hasan",
+          "decedent": "Hasan",
+          "year": 2001,
+          "result": {
+            "status": "missing",
+            "reasons": [
+              {
+                "kind": "missing",
+                "code": "predeceased_child_issue_unknown",
+                "params": {
+                  "name": "Kamal"
+                }
+              }
+            ],
+            "assumptions": [],
+            "shares": [],
+            "excluded": []
+          },
+          "used": "none",
+          "stated": null,
+          "distribution": null
+        }
+      ],
+      "coverage": {
+        "from": 1980,
+        "to": 2026,
+        "covered": [
+          [
+            1980,
+            2026,
+            "s-1980"
+          ]
+        ],
+        "gaps": []
+      },
+      "offer": {
+        "seller": "Jamal",
+        "area": "20",
+        "basis": "BS-641",
+        "plotArea": "60",
+        "chain": {
+          "held": "0",
+          "pending": [
+            "Hasan"
+          ],
+          "status": "undetermined"
+        },
+        "record": {
+          "held": "35",
+          "pending": [],
+          "status": "within"
+        }
+      },
+      "assumptions": [
+        {
+          "code": "A_GENUINE"
+        },
+        {
+          "code": "A_NAMES"
+        },
+        {
+          "code": "A_SAME_PLOT"
+        }
+      ],
+      "checklist": [
+        {
+          "item": "heir_details",
+          "findingIdx": [
+            0
+          ],
+          "params": [
+            {
+              "decedent": "Hasan",
+              "reason": "predeceased_child_issue_unknown",
+              "name": "Kamal"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "contradictions": 0,
+        "missing": 1,
+        "review": 0,
+        "inputErrors": 0
+      },
+      "rootDocId": "k-rs33"
+    }
+  }
+]

@@ -1,0 +1,1 @@
+(function(){'use strict';let lang='bn';try{const saved=localStorage.getItem('sutro.lang');if(['bn','en'].includes(saved))lang=saved;}catch{}document.documentElement.lang=lang;document.documentElement.dataset.theme='light';window.Sutro=Object.assign(window.Sutro||{},{locale:lang,pages:{}});})();

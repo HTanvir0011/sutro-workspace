@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "corpusLabel": "available-local-bundles",
+  "fullCorpusAccepted": false,
+  "sources": [
+    {"id":"form5462","version":"local-v1","root":"datasets/full/sutro-dataset/khatian_form5462","adapter":"form5462","access":"local-review-only","license":"MIT; generated synthetic forms","domain":"synthetic-printed-form5462","tasks":["browse","mapping","line-ocr"]},
+    {"id":"reasoning","version":"local-v1","root":"datasets/full/sutro-dataset/synthetic/packets","adapter":"packets","access":"local-review-only","license":"MIT; synthetic cases","domain":"synthetic-reasoning","tasks":["browse","engine-regression"]},
+    {"id":"numta","version":"local-v1","root":"datasets/full","include":["training-*","testing-*"],"adapter":"numta","access":"local-review-only","license":"CC BY-SA 4.0; NumtaDB, Bengali.AI","domain":"isolated-handwritten-digits","tasks":["digit-training"]},
+    {"id":"packed-crops","version":"local-v1","root":"datasets/full/sutro-dataset/ocr_cells_packed","adapter":"inventory-only","access":"restricted","license":"MIT; derivative of form5462","parentDataset":"form5462","domain":"derived-training-arrays","tasks":["line-training"]},
+    {"id":"real-deeds","version":"local-v1","root":"datasets/full/sutro-dataset/real_public/dolil_deeds","adapter":"inventory-only","access":"restricted","license":"CC BY 4.0; DIU Dolil, doi:10.17632/yk3c3xy9vm.1; publication approval required","domain":"unlabelled-real-deeds","tasks":[]},
+    {"id":"number-strings","version":"local-v1","root":"datasets/full/sutro-dataset/synthetic/number_strings","adapter":"inventory-only","access":"restricted","license":"MIT; synthetic number strings","domain":"unsupported-number-string-task","tasks":[]},
+    {"id":"processed-numta","version":"local-v1","root":"datasets/full/sutro-dataset/real_public/numta_digits","adapter":"inventory-only","access":"restricted","license":"CC BY-SA 4.0; NumtaDB derivative","parentDataset":"numta","domain":"derived-training-arrays","tasks":["digit-training"]}
+  ]
+}

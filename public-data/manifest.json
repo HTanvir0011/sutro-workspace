@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "profile": "static-demo",
+  "version": "handwritten-demo-v1",
+  "capabilities": [
+    "packet"
+  ],
+  "license": "MIT",
+  "records": [
+    {
+      "id": "demo-a",
+      "kind": "packet",
+      "title": "A · Seller's packet (Rahim)",
+      "datasetVersion": "handwritten-demo-v1",
+      "license": "MIT",
+      "access": "public-approved"
+    },
+    {
+      "id": "demo-b",
+      "kind": "packet",
+      "title": "B · After a registry search (Rahim)",
+      "datasetVersion": "handwritten-demo-v1",
+      "license": "MIT",
+      "access": "public-approved"
+    },
+    {
+      "id": "demo-c",
+      "kind": "packet",
+      "title": "C · Predeceased son (Jamal)",
+      "datasetVersion": "handwritten-demo-v1",
+      "license": "MIT",
+      "access": "public-approved"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Implementation decisions
+
+- Preserve static HTML/CSS/vanilla JavaScript, Node/browser engine compatibility and exact BigInt fractions. One case represents one explicitly selected plot, one proposed sale and supplied evidence only.
+- Light first paint, Bangla first visit, retain saved English/Bangla preference. Warm white, deep green, self-hosted Bengali font; short opacity/transform motion with reduced-motion support.
+- `static-demo`: approved handwritten synthetic examples only; usable without catalog or models. `local-full`: loopback same-origin gateway, launch-session cookie, registered roots under docs, offline streaming ingestion, read-only SQLite in a worker and bounded pagination. Missing full corpus is reported honestly. `hosted-full` is not selected and must remain disabled pending authentication/authorization/HTTPS and operational gates.
+- Public: home, methodology/about, examples. Workspace: My cases → intake → timeline → share audit → report. Library feeds explicitly reviewed cases. Training/configuration paths stay outside citizen workflows.
+- Cases individually stored in versioned IndexedDB with revisions; preferences only in localStorage. Preserve legacy originals until verified migration. Scan retention defaults to session-only; explicit opt-in persists blobs. Export/clear/delete are owner-controlled. No cloud sync or automatic uploads. Browser storage is neither encryption nor guaranteed backup.
+- Years supported initially 1600–2200; preserve raw identifiers and leading zeros. Evidence after as-of is excluded, with explicit feedback. Area/share arithmetic remains exact; printed rounded source values remain distinct.
+- Reference device: P00 ASUS i7/16 GB, Chrome desktop/mobile emulation. Review widths 320/360/390/768/1280/1440, 200% zoom, both motion settings, bilingual and print. Lab evidence is not field performance or accessibility certification.
+- Use built-in Node `node:sqlite` only in a worker; pinned Node runtime tested locally (API is release-candidate in current official docs). Recheck compatibility on LTS before claiming supported production deployment. Python standard-library CSV/JSONL/SQLite ingestion keeps dependencies small. No request starts indexing/training/processes.
+- Preserve all raw datasets, existing assets and unrelated changes. No Git/publication/network exposure or external training. Generated private catalogs/reports remain ignored. Full-data and actual model acceptance are independent gates.
+
+References checked: [Node SQLite](https://nodejs.org/api/sqlite.html), [Playwright visual comparison](https://playwright.dev/docs/test-snapshots). Pinned Playwright is a local development check dependency only.

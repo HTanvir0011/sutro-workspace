@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "id": "line",
+      "version": "legacy-20261014-revalidation",
+      "status": "experimental",
+      "model": "assets/models/khatian_ocr.onnx",
+      "sha256": "cbf3bd83c5da6ff8fa4fed5c05a48d0809b964d28b4a46fb6bf1556836c0fcaa",
+      "meta": "assets/models/khatian_ocr.charset.json",
+      "metaSha256": "ece697080a9bdfc286806a37a49e7a68251234e930f79e3f7055218e59e5f77c",
+      "license": "MIT; synthetic Form-5462 training",
+      "scope": "synthetic printed line",
+      "runtime": "onnxruntime-web@1.30.0",
+      "input": "float32 NCHW",
+      "realFormsAccepted": false,
+      "bytes": 24397357
+    },
+    {
+      "id": "digit",
+      "version": "legacy-20261014-revalidation",
+      "status": "experimental",
+      "model": "assets/models/numta_cnn.onnx",
+      "sha256": "ca3bc017f0ebca3161d9c027ad8efa24d70eeea76399a59796c1f0cc8c8f00d5",
+      "meta": "assets/models/numta_cnn.preprocessing.json",
+      "metaSha256": "a6c2b55d4e2b6765d75dcb63ae37e2c4498c7983b8cc9c7ffd044feb44782b5e",
+      "license": "CC BY-SA 4.0; NumtaDB derivative",
+      "scope": "isolated handwritten digit",
+      "runtime": "onnxruntime-web@1.30.0",
+      "input": "float32 NCHW",
+      "realFormsAccepted": false,
+      "bytes": 3257128
+    }
+  ]
+}

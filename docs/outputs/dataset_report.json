@@ -1,0 +1,54 @@
+{
+  "limit_bytes": 2000000000,
+  "byte_unit": "GB = 1,000,000,000 bytes",
+  "datasets": [
+    {
+      "file": "dataset_1_land_ocr.zip",
+      "archive_bytes": 1607085094,
+      "extracted_bytes": 1730860337,
+      "files": 144037,
+      "sha256": "6278143dc86a2b91027973c65ad03f510081807726cea6f2778e55b518df2bff",
+      "details": {
+        "lands": 2000,
+        "khatian_pages": 5794,
+        "ocr_crops": 107475,
+        "reasoning_cases": 20000,
+        "number_crops": 30000,
+        "deed_scans": 653,
+        "checks": "All page/crop/scan paths, table relationships, land splits and printed owner shares passed"
+      }
+    },
+    {
+      "file": "dataset_2_numta_digits.zip",
+      "archive_bytes": 1984272920,
+      "extracted_bytes": 1968877634,
+      "files": 103031,
+      "sha256": "bcc622aa2531c3d03cbb37a5c8961c5bc058e87da28efb7f7e05dd7b2b322526",
+      "details": {
+        "labelled_training_images": 72045,
+        "source_files": 103028,
+        "groups": {
+          "testing-a": 3489,
+          "testing-all-corrected": 17626,
+          "testing-b": 69,
+          "testing-c": 4381,
+          "testing-d": 1948,
+          "testing-e": 2970,
+          "testing-f": 495,
+          "training-a.csv": 1,
+          "training-a": 19702,
+          "training-b.csv": 1,
+          "training-b": 359,
+          "training-c.csv": 1,
+          "training-c": 24298,
+          "training-d.csv": 1,
+          "training-d": 10908,
+          "training-e.csv": 1,
+          "training-e": 16778
+        },
+        "omitted_augmented_test_images": 4274
+      }
+    }
+  ],
+  "verification": "All archive entries passed CRC; Dataset 1 copied byte-for-byte; Dataset 2 file hashes match source; labels and land relationships passed."
+}

@@ -1,0 +1,36 @@
+{
+  "name": "sutro",
+  "version": "0.1.0",
+  "description": "Sutro â€” pre-purchase evidence check for a single land plot (LandTech 2026 prototype, synthetic data only)",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/serve.js 5173",
+    "test": "node --test tests/*.test.js",
+    "kaggle:push": "node scripts/kaggle.js push",
+    "kaggle:status": "node scripts/kaggle.js status",
+    "kaggle:pull": "node scripts/kaggle.js pull",
+    "build": "node scripts/build.js",
+    "start:demo": "node scripts/serve.js 5173",
+    "test:domain": "node --test tests/engine.test.js tests/inheritance.test.js tests/fraction.test.js",
+    "test:integration": "node --test tests/contracts.test.js tests/security.test.js",
+    "test:e2e": "playwright test",
+    "check:release": "node scripts/check-release.js",
+    "start:full": "node server/start.js 5174",
+    "data:inventory": "python tools/data/catalog.py inventory",
+    "data:validate": "python tools/data/catalog.py validate",
+    "data:index": "python tools/data/catalog.py index",
+    "data:previews": "python tools/data/previews.py",
+    "data:evaluate": "node scripts/evaluate-packets.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  },
+  "dependencies": {
+    "onnxruntime-web": "1.30.0",
+    "pdfjs-dist": "6.4.299"
+  }
+}

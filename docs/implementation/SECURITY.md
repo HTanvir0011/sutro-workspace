@@ -1,0 +1,11 @@
+# Security boundaries and current evidence
+
+The public build copies intended public directories/pages only. It rejects symlinks, unreviewed extensions/oversize files and known secret/path patterns. Sources under docs, runtime SQLite, private uploads, training arrays and server code are excluded. The server serves only the built directory using canonical containment and streamed responses; Windows drive/UNC/separators/ADS, malformed encodings and junction escapes are tested. Only GET/HEAD are supported. Dataset APIs require a local ephemeral HttpOnly/SameSite cookie established by browser navigation; Host, Origin and fetch-site checks apply. No API starts a process, import, index or training job. Remote binding is not supported.
+
+The redesigned pages render dynamic data with DOM text nodes, not imported HTML. Import contracts reject prototype keys, unsafe IDs, invalid types, excessive depth/rows/strings, unsupported versions and duplicate document IDs. Import declarations never grant access or reviewed provenance. CSP excludes inline executable scripts, event attributes, remote dependencies and broad eval. Model/WASM exceptions remain unaccepted until actual worker testing.
+
+Verification so far: `node --test tests/security.test.js tests/contracts.test.js` and the local Chrome workflow tests pass. Private-path, method, Host/Origin/session, malformed encoding and Windows-junction negatives pass. Browser test labels containing image/onerror markup remain text. No external resource requests in the tested static library. This is bounded test evidence, not a complete security certification.
+
+Existing tracked `artifacts/runs/` contains historical training/evaluation metadata and model files. These predate this work, are retained locally unchanged, and are excluded from public builds. Ignore rules do not remove tracked history. No untracking/history rewrite/publication was authorized or performed. `check-release.js` fails staged unapproved model/training/private/large files; the former publication script now only runs local preflight. Full-history remediation remains an owner-controlled separate scope if publication is later requested.
+
+Outstanding: full gateway ID/policy/cursor checks, actual OCR worker/CSP parity, final abuse matrix and full-corpus performance checks. No private or hosted deployment is accepted.
