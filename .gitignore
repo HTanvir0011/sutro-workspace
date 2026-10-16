@@ -37,3 +37,4 @@ __pycache__/
 
 # Local Vercel project metadata and credentials.
 /.vercel/
+.env*
